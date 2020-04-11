@@ -1,7 +1,7 @@
 ens160:
-   addresses: [10.0.5.12/24] 
-   gateway4: 10.0.5.2
+   addresses: [172.16.1.5/24] 
+   gateway4: 172.16.1.2
    dhcp4: no
    nameservers:
         search: [mydomain, otherdomain]
-        addresses: [10.0.5.5] 
+        addresses: [172.16.1.12, 172.16.1.13] 
