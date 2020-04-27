@@ -1,1 +1,12 @@
+---
+ - hosts: centos
+   become: true
+   tasks:
+    - name: install httpd and httpd-tools to centos systems
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+        - httpd
+        - mariadb-server
 
