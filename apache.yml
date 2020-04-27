@@ -1,0 +1,9 @@
+---
+  - hosts: apache
+    become: true
+    vars:
+      apache_listen_port:80
+      apache_vhosts:
+        - {servername: "final.local", documentroot: "var/www/html"}
+    roles:
+      - { role: geerlingguy.apache}
