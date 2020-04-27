@@ -1,1 +1,9 @@
-
+---
+ - hosts: ubuntu
+   become: true
+   tasks:
+    - name: Installs foo and foo-tools for ubuntu systems
+      apt:
+        pkg:
+        - apache2
+        - mariadb-server
