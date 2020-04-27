@@ -1,0 +1,14 @@
+[apache]
+172.16.1.15
+[centos]
+172.16.1.10
+[ubuntu]
+172.16.1.5
+[windows]
+172.16.1.12
+[windows:vars]
+ansible_user=administrator@final.local
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+ansible_winrm_transport=ntlm
+ansible_winrm_port=5986
