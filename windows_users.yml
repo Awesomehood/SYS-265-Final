@@ -1,1 +1,13 @@
+---
+ - hosts: windows
+   gather_facts: no
+   tasks:
+    - name: Add user to remote server
+      win_domain_user:
+        name: joe
+        password: PassWordHere!
+        state: present
+        domain_username: FINAL\administrator
+        domain_password: FinalProject1!
+        domain_server: final.local
 
