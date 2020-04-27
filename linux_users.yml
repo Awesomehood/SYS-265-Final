@@ -11,4 +11,4 @@
         name: joe
         append: yes
         shell: /bin/bash
-        password: 
+        password: $6$htqpgnBtJQD$LWDrYYNCoWuLFO10s5LkAThSSTiYNxIeDu8feNaB2ze/AtF.cnVYcBYxtkPXxfauzmbwDg2ng3nKa14Wd2tdq0
