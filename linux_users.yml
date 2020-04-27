@@ -1,2 +1,14 @@
 ---
- - hosts
+ - hosts: centos
+   remote_user: final
+   become: yes
+   become_method: sudo
+   gather_facts: no
+   connection: ssh
+   tasks:
+    - name: Add user to remote server
+      user:
+        name: joe
+        append: yes
+        shell: /bin/bash
+        password: 
